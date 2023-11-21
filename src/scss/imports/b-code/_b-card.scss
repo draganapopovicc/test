@@ -1,0 +1,79 @@
+.b-card {
+   border-radius: 20px;
+   padding: 24px 23px 29px;
+   position: relative;
+   background-color: $text-color-light;
+
+   @media (min-width: $media-desktop) {
+      padding: 32px 33px 60px;
+   }
+
+   &__icon {
+      background: $blue-primary;
+      width: 56px;
+      height: 56px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: $media-desktop) {
+         width: 72px;
+         height: 72px;
+
+         svg {
+            width: 40px;
+            height: 40px;
+         }
+      }
+   }
+
+   &__title {
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 700;
+      margin: 24px 0 16px;
+
+      @media (min-width: $media-desktop) {
+         font-size: 28px;
+         line-height: 38px;
+      }
+   }
+
+   &__desc {
+      font-weight: 400;
+      line-height: 20px;
+      color: $text-color-dark-secondary;
+      display: -webkit-box;
+      -webkit-line-clamp: 9;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      @media (min-width: $media-desktop) {
+         font-size: 18px;
+         line-height: 23px;
+         margin-bottom: 61px;
+      }
+   }
+
+   &__link {
+      color: $red;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 48px;
+
+      @media (min-width: $media-desktop) {
+         position: absolute;
+         bottom: 36px;
+         left: 33px;
+         right: 33px;
+      }
+
+      span {
+         border-bottom: 1px solid $red;
+      }
+   }
+}

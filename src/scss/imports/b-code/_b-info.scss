@@ -1,0 +1,90 @@
+.b-info {
+   li {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 16px;
+      line-height: 20px;
+
+      &:not(:last-child) {
+         margin-bottom: 23px;
+
+         @media (min-width: $media-desktop) {
+            margin-bottom: 12px;
+         }
+      }
+
+      @media (min-width: $media-desktop) {
+         font-size: 20px;
+         line-height: 25px;
+      }
+   }
+
+   svg {
+      flex: 0 0 20px;
+   }
+
+   &__working-hours,
+   &__phones {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $media-tablet) {
+         flex: 0 0 auto;
+      }
+   }
+
+   &__phones {
+      @media (min-width: $media-desktop) {
+         flex-direction: row;
+
+         span:last-child {
+            margin-left: 5px;
+         }
+      }
+   }
+
+   &--footer {
+      li {
+         &:first-child {
+            line-height: 22px;
+         }
+
+         &:last-child {
+            line-height: 26px;
+         }
+      }
+   }
+
+   //info in footer
+   &--map {
+      li {
+         line-height: 26px;
+         font-size: 18px;
+
+         &:not(:last-child) {
+            margin-bottom: 17px;
+         }
+
+         @media (min-width: $media-tablet) {
+            &:not(:last-child) {
+               margin-bottom: 15px;
+            }
+         }
+
+         @media (min-width: $media-tablet) {
+            font-size: 20px;
+         }
+      }
+
+      .b-info__phones {
+         @media (min-width: $media-tablet) {
+            flex-direction: row;
+
+            span:last-child {
+               margin-left: 5px;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,124 @@
+html {
+   scroll-behavior: smooth;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $font-family-primary;
+   color: $text-color-dark-primary;
+   font-weight: 500;
+}
+
+input,
+select,
+button {
+   font-family: $font-family-primary;
+}
+
+.wrapper {
+   min-width: 270px;
+   margin: 0 auto;
+   padding: 0 16px;
+   max-width: 1450px;
+
+   @media (min-width: $media-tablet) {
+      padding: 0 25px;
+   }
+
+   @media (min-width: $media-desktop) {
+      padding: 0 125px;
+   }
+}
+
+section {
+   &.cards,
+   &.introduction,
+   &.insurance,
+   &.service-groups,
+   &.expert-team,
+   &.team,
+   &.map {
+      background: $grey-primary;
+   }
+}
+
+h1 {
+   font-size: 40px;
+   line-height: 50px;
+   font-weight: 700;
+
+   @media (max-width: 310px) {
+      font-size: 33px;
+   }
+
+   @media (min-width: $media-tablet) {
+      font-size: 50px;
+      line-height: 62px;
+   }
+
+   @media (min-width: $media-desktop) {
+      font-size: 57px;
+      line-height: 72px;
+   }
+}
+
+h2 {
+   font-size: 36px;
+   line-height: 46px;
+   font-weight: 700;
+
+   @media (min-width: $media-tablet) {
+      font-size: 42px;
+      line-height: 50px;
+   }
+
+   @media (min-width: $media-desktop) {
+      font-size: 47px;
+      line-height: 60px;
+   }
+}
+
+h3 {
+   font-size: 30px;
+   line-height: 44px;
+
+   @media (min-width: $media-tablet) {
+      font-size: 34px;
+      line-height: 44px;
+   }
+
+   @media (min-width: $media-desktop) {
+      font-size: 42px;
+      line-height: 50px;
+   }
+}
+
+h4 {
+   font-size: 28px;
+   line-height: 38px;
+   font-weight: 700;
+
+   @media (min-width: $media-tablet) {
+      font-size: 26px;
+      line-height: 38px;
+   }
+
+   @media (min-width: $media-desktop) {
+      font-size: 38px;
+      line-height: 60px;
+   }
+}
+
+a {
+   display: inline-block;
+   color: inherit;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+img {
+   height: auto;
+}

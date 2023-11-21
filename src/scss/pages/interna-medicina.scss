@@ -1,0 +1,111 @@
+.interna-medicina {
+  // HERO **************************
+  .hero {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.63), rgba(30, 30, 30, 0)), url('../images/interna-medicina/interna-medicina-featured.webp');
+    min-height: 57vh;
+
+    @media (min-width: $media-tablet) {
+      padding: 103px 0;
+    }
+
+    @media (min-width: $media-desktop) {
+      padding: 98px 0;
+    }
+  }
+
+  // SERVICE GROUPS **************************
+  .service-groups {
+    padding: 22px 0 48px;
+
+    @media (min-width: $media-tablet) {
+      padding: 54px 0 59px;
+    }
+
+    @media (min-width: $media-desktop) {
+      padding: 70px 0 73px;
+    }
+
+    &__title {
+      margin: 33px 0 30px;
+      line-height: 52px;
+
+      @media (min-width: $media-tablet) {
+        margin-bottom: 39px;
+      }
+
+      @media (min-width: $media-tablet) {
+        margin: 43px 0 50px;
+        font-size: 48px;
+      }
+    }
+
+    &__cards {
+      display: grid;
+      gap: 25px;
+
+      @media (min-width: $media-tablet) {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px 25px;
+      }
+
+      @media (min-width: $media-desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 41px 25px;
+      }
+    }
+
+    .b-card {
+      @media (min-width: $media-tablet) {
+        min-height: 350px;
+      }
+
+      @media (min-width: $media-desktop) {
+        padding: 42px 24px;
+        min-height: 450px;
+      }
+
+      img {
+        @media (min-width: $media-desktop) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      &__title {
+        margin-top: 29px;
+
+        @media (min-width: $media-tablet) {
+          font-size: 20px;
+        }
+
+        @media (min-width: $media-desktop) {
+          font-size: 28px;
+          margin: 23px 0 15px;
+        }
+      }
+
+      &__desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      &__link {
+        @media (min-width: $media-tablet) {
+          position: absolute;
+          bottom: 26px;
+          left: 23px;
+          right: 23px;
+
+          @media (min-width: $media-desktop) {
+            bottom: 26px;
+            left: 25px;
+            right: 25px;
+            bottom: 45px;
+          }
+        }
+      }
+    }
+  }
+}

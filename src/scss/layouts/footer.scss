@@ -1,0 +1,135 @@
+.footer {
+   &__logo {
+      @media (min-width: $media-desktop) {
+         width: 180px;
+      }
+   }
+
+   &__top {
+      background: $gold-secondary;
+      padding: 53px 0 49px;
+
+      @media (min-width: $media-tablet) {
+         padding: 25px 0;
+      }
+
+      @media (min-width: $media-desktop) {
+         padding: 41px 0;
+      }
+
+      .wrapper {
+         display: flex;
+         flex-direction: column;
+         gap: 38px;
+
+         @media (min-width: $media-tablet) {
+            flex-direction: row;
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: space-between;
+         }
+
+         @media (min-width: $media-desktop) {
+            align-items: center;
+         }
+      }
+   }
+
+   &__list {
+      li {
+         line-height: 24px;
+
+         &:not(:last-child) {
+            margin-bottom: 24px;
+
+            @media (min-width: $media-tablet) {
+               margin-bottom: 36px;
+            }
+
+            @media (min-width: $media-desktop) {
+               margin-bottom: 23px;
+            }
+         }
+      }
+
+      a {
+         @media (min-width: $media-desktop) {
+            font-size: 18px;
+         }
+      }
+
+      // &-working-hours,
+      // &-phones {
+      //   display: flex;
+      //   flex-direction: column;
+
+      //   @media (min-width: $media-tablet) {
+      //     flex: 0 0 auto;
+      //   }
+      // }
+
+      // &-phones {
+      //   @media (min-width: $media-desktop) {
+      //     flex-direction: row;
+      //   }
+      // }
+
+      // &-info {
+      //   li {
+      //     line-height: 26px;
+
+      //     &:not(:last-child) {
+      //       margin-bottom: 20px;
+
+      //       @media (min-width: $media-desktop) {
+      //         margin-bottom: 12px;
+      //       }
+      //     }
+
+      //     &:first-child {
+      //       line-height: 20px;
+      //     }
+
+      //     &:last-child {
+      //       line-height: 26px;
+      //     }
+      //   }
+
+      //   a {
+      //     display: flex;
+      //     align-items: center;
+      //     gap: 7px;
+      //   }
+
+      //   svg {
+      //     flex: 0 0 20px;
+      //   }
+      // }
+   }
+
+   &__bottom {
+      background: $gold-primary;
+      padding: 12px 0;
+
+      .wrapper {
+         display: flex;
+         flex-direction: column;
+         gap: 17px;
+
+         @media (min-width: $media-tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+         }
+      }
+
+      p {
+         line-height: 24px;
+      }
+
+      &-taraba-copyright {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+      }
+   }
+}

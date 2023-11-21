@@ -1,0 +1,25 @@
+//base
+@import './base/font';
+@import './base/resets';
+@import './base/variables';
+@import './base/common-style';
+
+// Block of code
+@import './imports/b-code/b-btn';
+@import './imports/b-code/b-badge';
+@import './imports/b-code/b-card';
+@import './imports/b-code/b-name';
+@import './imports/b-code/b-info';
+
+//layouts
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/contact-us';
+@import './layouts/hero';
+
+//pages
+@import './pages/index';
+@import './pages/interna-medicina';
+@import './pages/kardiologija';
+@import './pages/tim';
+@import './pages/contact';

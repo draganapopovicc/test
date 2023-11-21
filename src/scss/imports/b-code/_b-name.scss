@@ -1,0 +1,23 @@
+.b-name {
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: $media-desktop) {
+    font-size: 22px;
+  }
+
+  span {
+    color: $red;
+    font-weight: 700;
+  }
+
+  &--bigger {
+    font-size: 18px;
+    line-height: 26px;
+
+    @media (min-width: $media-desktop) {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.hero {
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 70vh;
+   padding: 64px 0;
+
+   &__wrap {
+      @media (min-width: $media-tablet) {
+         max-width: 70%;
+      }
+   }
+
+   &__desc {
+      line-height: 26px;
+      margin-top: 16px;
+      font-weight: 400;
+
+      @media (min-width: $media-desktop) {
+         font-size: 18px;
+      }
+   }
+
+   .b-btn {
+      display: inline-flex;
+      margin-top: 31px;
+      height: 54px;
+
+      @media (min-width: $media-tablet) {
+         font-size: 18px;
+         height: 62px;
+         padding: 0 16px;
+      }
+
+      @media (min-width: $media-desktop) {
+         font-size: 20px;
+         padding: 0 17px;
+         margin-top: 32px;
+      }
+   }
+}
+
+.kardiologija,
+.interna-medicina,
+.tim {
+   .hero {
+      min-height: 57vh;
+
+      .b-badge {
+         margin-bottom: 18px;
+      }
+
+      &__wrap {
+         max-width: 350px;
+
+         @media (min-width: $media-tablet) {
+            max-width: 420px;
+         }
+
+         @media (min-width: $media-desktop) {
+            max-width: 490px;
+         }
+      }
+   }
+}

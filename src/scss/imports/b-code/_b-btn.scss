@@ -1,0 +1,23 @@
+.b-btn {
+   background: $red;
+   color: $text-color-light;
+   border: none;
+   border-radius: $border-radius;
+   font-weight: 700;
+   line-height: 24px;
+   height: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0 11px;
+
+   @media (min-width: $media-tablet) {
+      height: 54px;
+      padding: 0 15px;
+      font-size: 20px;
+   }
+
+   svg {
+      margin-left: 14px;
+   }
+}

@@ -1,0 +1,232 @@
+.kardiologija {
+  // HERO **************************
+  .hero {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.63), rgba(30, 30, 30, 0)), url('../images/interna-medicina/kardiologija.webp');
+    padding: 48px 0 42px;
+
+    @media (min-width: $media-tablet) {
+      padding: 128px 0;
+    }
+
+    @media (min-width: $media-desktop) {
+      padding: 75px 0 20px;
+      min-height: 38.5vh;
+    }
+
+    .wrapper {
+      @media (min-width: $media-tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    &__wrap {
+      @media (min-width: $media-tablet) {
+        max-width: 500px;
+      }
+
+      @media (min-width: $media-desktop) {
+        max-width: 670px;
+      }
+    }
+
+    &__icon {
+      //vidi da stavim mixin za ovo ili pod b-klasu
+      width: 88px;
+      height: 88px;
+      background: $text-color-light;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      margin-top: 39px;
+
+      @media (min-width: $media-tablet) {
+        width: 140px;
+        height: 140px;
+        margin-top: 0;
+
+        img {
+          width: 60px;
+        }
+      }
+
+      @media (min-width: $media-desktop) {
+        width: 160px;
+        height: 160px;
+        margin-top: 0;
+
+        img {
+          width: 81px;
+        }
+      }
+    }
+  }
+
+  //EXPERT TEAM **************************
+  .expert-team {
+    padding: 47px 0;
+    font-weight: 400;
+
+    @media (min-width: $media-tablet) {
+      padding: 57px 0;
+    }
+
+    @media (min-width: $media-desktop) {
+      padding: 74px 0 71px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+
+      @media (min-width: $media-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &__text {
+      @media (min-width: $media-tablet) {
+        flex: 0 1 670px;
+      }
+    }
+
+    &__title {
+      margin: 33px 0 24px;
+
+      @media (min-width: $media-desktop) {
+        font-size: 48px;
+        margin: 16px 0 28px;
+      }
+    }
+
+    &__staff {
+      margin-bottom: 39px;
+
+      @media (min-width: $media-desktop) {
+        margin-bottom: 62px;
+      }
+
+      .b-name {
+        &:not(:last-child) {
+          margin-bottom: 8px;
+
+          @media (min-width: $media-desktop) {
+            margin-bottom: 21px;
+          }
+        }
+      }
+    }
+
+    &__service-desc {
+      &-text {
+        margin-top: 25px;
+
+        p {
+          font-size: 18px;
+          line-height: 26px;
+
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+
+    &__examination {
+      margin-top: 39px;
+
+      @media (min-width: $media-desktop) {
+        margin-top: 55px;
+      }
+
+      .b-badge {
+        margin-bottom: 24px;
+      }
+
+      &-type {
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 15px;
+        }
+
+        ul {
+          margin-left: 30px;
+
+          li {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 600;
+            position: relative;
+
+            &:after {
+              content: '';
+              position: absolute;
+              width: 6px;
+              height: 6px;
+              border-radius: 100%;
+              background: $text-color-dark-primary;
+              left: -18px;
+              top: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    &__note {
+      margin-top: 41px;
+      display: flex;
+      gap: 9px;
+
+      @media (min-width: $media-desktop) {
+        margin-top: 58px;
+      }
+
+      svg {
+        flex: 0 0 auto;
+        margin-top: 10px;
+        margin: 4px 0 0 5px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+
+    &__images {
+      @media (min-width: $media-tablet) {
+        flex: 1 0 256px;
+      }
+
+      @media (min-width: $media-desktop) {
+        flex: 0 0 383px;
+      }
+
+      img {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-bottom: 26px;
+        }
+
+        @media (min-width: $media-desktop) {
+          height: 258px;
+
+          &:not(:last-child) {
+            margin-bottom: 38px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.contact {
+   // MAP **************************
+   .map {
+      padding: 48px 0 55px;
+
+      @media (min-width: $media-tablet) {
+         padding: 57px 0 76px;
+      }
+
+      @media (min-width: $media-desktop) {
+         padding: 72px 0 92px;
+      }
+
+      .wrapper {
+         @media (min-width: $media-desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 35px;
+         }
+      }
+
+      &__info {
+         @media (min-width: $media-desktop) {
+            margin-top: 22px;
+         }
+      }
+
+      .b-badge {
+         margin-bottom: 24px;
+         background: $blue-primary;
+         color: $text-color-light;
+      }
+
+      &__title {
+         @media (min-width: $media-tablet) {
+            font-size: 57px;
+            line-height: 72px;
+         }
+      }
+
+      .b-info {
+         margin: 40px 0 27px;
+
+         @media (min-width: $media-tablet) {
+            margin-bottom: 21px;
+         }
+
+         @media (min-width: $media-desktop) {
+            margin-bottom: 0;
+         }
+      }
+
+      iframe {
+         width: 100%;
+         border-radius: $border-radius;
+         border: 2px solid $text-color-light;
+
+         @media (min-width: $media-tablet) {
+            height: 545px;
+         }
+
+         @media (min-width: $media-desktop) {
+            height: 444px;
+         }
+      }
+   }
+}
